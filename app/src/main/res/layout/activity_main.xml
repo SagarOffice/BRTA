@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#fe217693"
+    tools:context="com.brta.brta.MainActivity">
+
+    <TextView
+        android:layout_marginTop="40dp"
+        android:textColor="#f9f7f9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Vehicle Info :"
+        android:textStyle="bold|italic"
+        android:textAppearance="?android:textAppearanceLarge" />
+
+    <LinearLayout
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/groupVeichle"
+            android:layout_width="0dp"
+            android:background="@drawable/spinner"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:gravity="center" />
+
+        <Spinner
+            android:background="@drawable/spinner"
+            android:id="@+id/disitVaichle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:gravity="center" />
+
+        <EditText
+            android:id="@+id/veichleNo"
+            android:inputType="number"
+            android:layout_width="0dp"
+            android:background="#fff"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:hint=" " />
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="40dp"
+        android:textColor="#fff"
+        android:textStyle="bold|italic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Driver Info :"
+        android:textAppearance="?android:textAppearanceLarge" />
+
+    <EditText
+        android:layout_marginTop="40dp"
+        android:id="@+id/driverInfoEt"
+        android:background="#fff"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/submitBtn"
+        android:text="Submit"
+        android:textColor="#fff"
+        android:background="#f4181840"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:textColor="#fff"
+        android:layout_marginTop="20dp"
+        android:id="@+id/showTextTv"
+        android:maxHeight="100dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
